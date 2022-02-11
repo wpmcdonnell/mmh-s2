@@ -11,10 +11,10 @@ contract Mmh is ERC721URIStorage, Ownable {
   Counters.Counter private tokenIds;
   uint256 public maxSupply = 7;
 
-constructor() ERC721("Perpetuity", "MMH-S1") {
+constructor() ERC721("Zarathustra Decends The Mountain", "MMH-S2") {
 }
 
-function mint(string calldata _ipfsMetaData) public onlyOwner returns(uint256) {
+function mint() public onlyOwner returns(uint256) {
       require(maxSupply > tokenIds.current(), "All tokens has been minted!");
       tokenIds.increment();
       uint256 currentTokenId = tokenIds.current();
