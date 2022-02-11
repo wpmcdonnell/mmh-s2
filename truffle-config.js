@@ -54,6 +54,7 @@ module.exports = {
      host: "127.0.0.1",     // Localhost (default: none)
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
+     from: "0xC127423535894161e2E86B57b88ADeAF53cdc596",
     },
     // Another network with more advanced options...
     // advanced: {
@@ -80,7 +81,8 @@ module.exports = {
       network_id: 137,
       confirmations: 2,
       timeoutBlocks: 200,
-      skipDryRun: true   // Skip dry run before migrations? (default: false for public nets )
+      skipDryRun: true, 
+      from: "0xE354CF3601733874DAee960EBd58779B092Fe9C6",   // Skip dry run before migrations? (default: false for public nets )
     },
     // Polygon Testnet
     mumbai: {
