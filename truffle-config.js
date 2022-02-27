@@ -87,7 +87,6 @@ module.exports = {
     mumbai: {
       provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com/v1/c138d9b47b5ebcb98892bf6fd82d7473e0b73557`),
       network_id: 80001,
-      from: "0xE354CF3601733874DAee960EBd58779B092Fe9C6", 
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true   // Skip dry run before migrations? (default: false for public nets )
