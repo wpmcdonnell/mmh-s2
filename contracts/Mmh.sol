@@ -9,9 +9,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Mmh is ERC721URIStorage, Ownable {
   using Counters for Counters.Counter;
   Counters.Counter private tokenIds;
-  uint256 public maxSupply = 10;
+  uint256 public maxSupply = 7;
 
-constructor() ERC721("Zarathustra Decends The Mountain", "MMH-S2") {
+constructor() ERC721("Perpetuity: Main Collection", "MMH-S2") {
 }
 
 function mint(string calldata _ipfsMetaData) public onlyOwner returns(uint256) {
