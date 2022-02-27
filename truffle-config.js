@@ -77,11 +77,10 @@ module.exports = {
     },
     // Polygon mainnet
     matic: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://rpc-mainnet.maticvigil.com/v1/c138d9b47b5ebcb98892bf6fd82d7473e0b73557'),
+      provider: () => new HDWalletProvider(mnemonic, `https://polygon-mainnet.infura.io/v3/2fa0376ef18e45c7b000539169ba08c1`),
       network_id: 137,
       confirmations: 2,
-      timeoutBlocks: 200,
-      skipDryRun: true,  // Skip dry run before migrations? (default: false for public nets )
+      timeoutBlocks: 200
     },
     // Polygon Testnet
     mumbai: {
