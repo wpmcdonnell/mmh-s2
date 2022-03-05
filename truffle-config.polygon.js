@@ -25,17 +25,18 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
     },
     //polygon Infura mainnet
-    polygon_infura_mainnet: {
+    polygon_alchemy_mainnet: {
       provider: () => new HDWalletProvider({
         mnemonic: {
           phrase: mnemonic
         },
         providerOrUrl:
-         "https://polygon-mainnet.infura.io/v3/" + infuraProjectId
+        "https://polygon-mainnet.g.alchemy.com/v2/m_ln1fzGKELe331xNeb9hMcbdRcfRKRy"
       }),
       network_id: 137,
       confirmations: 2,
       timeoutBlocks: 200,
+      gasPrice: 470000000000,
       skipDryRun: true,
       chainId: 137
     },
