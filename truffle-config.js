@@ -99,6 +99,42 @@ module.exports = {
     // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     // },
+    // Binance Smart Chain mainnet
+    binance: {
+      provider: () => new HDWalletProvider(mnemonic, `https://bsc-dataseed1.binance.org:443`),
+      network_id: 56,
+      confirmations: 10,
+      gasPrice: 5500000,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+    // Ethereum Mainnet
+    ethereum: {
+      provider: () => new HDWalletProvider(mnemonic, `https://mainnet.infura.io/v3/609108b8a3574a65b23c3d1a0042a1e3`),
+      network_id: 1,
+      gas: 5500000,      
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+    // Fantom
+    fantom: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rpcapi.fantom.network/`),
+      network_id: 250,
+      gas: 5500000,      
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+      // Avalanche
+      avalanche: {
+        provider: () => new HDWalletProvider(mnemonic, `https://api.avax.network/ext/bc/C/rpc`),
+        network_id: 43114,
+        gas: 5500000,      
+        confirmations: 2,
+        timeoutBlocks: 200,
+        skipDryRun: true
+      },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
