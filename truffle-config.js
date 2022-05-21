@@ -84,13 +84,13 @@ module.exports = {
       skipDryRun: true   // Skip dry run before migrations? (default: false for public nets )
     },
     // Polygon Testnet
-    // mumbai: {
-    //   provider: () => new HDWalletProvider(mnemonic, `https://polygon-mumbai.g.alchemy.com/v2/${alchemyKey}`),
-    //   network_id: 80001,
-    //   confirmations: 2,
-    //   timeoutBlocks: 200,
-    //   skipDryRun: true   // Skip dry run before migrations? (default: false for public nets )
-    // },
+    mumbai: {
+      provider: () => new HDWalletProvider(mnemonic, `https://polygon-mumbai.g.alchemy.com/v2/${alchemyKey}`),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true   // Skip dry run before migrations? (default: false for public nets )
+    },
     // ropsten: {
     // provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/${infuraKey}`),
     // network_id: 3,       // Ropsten's id
@@ -126,14 +126,14 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
-      // Avalanche
-      avalanche: {
-        provider: () => new HDWalletProvider(mnemonic, `https://api.avax.network/ext/bc/C/rpc`),
-        network_id: 43114,
-        gas: 5500000,      
-        confirmations: 2,
-        timeoutBlocks: 200,
-        skipDryRun: true
+    // Avalanche
+    avalanche: {
+      provider: () => new HDWalletProvider(mnemonic, `https://api.avax.network/ext/bc/C/rpc`),
+      network_id: 43114,
+      gas: 5500000,      
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
       },
     // Useful for private networks
     // private: {
